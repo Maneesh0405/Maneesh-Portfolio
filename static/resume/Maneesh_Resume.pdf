@@ -1,0 +1,249 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 842]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 <<
+        /Type /Font
+        /Subtype /Type1
+        /BaseFont /Helvetica
+      >>
+      /F2 <<
+        /Type /Font
+        /Subtype /Type1
+        /BaseFont /Helvetica-Bold
+      >>
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<<
+  /Length 3167
+>>
+stream
+BT
+/F1 18 Tf
+50 780 Td
+(Velicheti Maneesh Chowdari) Tj
+ET
+BT
+/F1 11 Tf
+50 762 Td
+(AI Undergraduate | Machine Learning & Generative AI Builder) Tj
+ET
+BT
+/F1 9 Tf
+50 748 Td
+(Email: velichetimaneesh45@gmail.com | Phone: +91 8897231582 | GitHub: Maneesh0405) Tj
+ET
+0.2 0.4 0.8 RG 2 w 50 738 m 550 738 l S
+BT
+/F2 12 Tf
+0.2 0.3 0.6 rg
+50 712 Td
+(--- EDUCATION ---) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 696 Td
+(Bachelor of Science in Artificial Intelligence \(2023 - 2026\)) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 683 Td
+(Aditya Degree College \(Affiliated to Andhra University\)) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 670 Td
+(CGPA: 8.00) Tj
+ET
+BT
+/F2 12 Tf
+0.2 0.3 0.6 rg
+50 651 Td
+(--- TECHNICAL SKILLS ---) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 635 Td
+(Languages: Python, Java, C, JavaScript) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 622 Td
+(Web Tech: HTML5, CSS3, JavaScript, Flask) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 609 Td
+(AI / ML: Machine Learning, Natural Language Processing \(NLP\), Generative AI, LangChain) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 596 Td
+(Libraries: Scikit-Learn, Pandas, spaCy, NumPy) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 583 Td
+(Tools & Platforms: Git, GitHub, SQL) Tj
+ET
+BT
+/F2 12 Tf
+0.2 0.3 0.6 rg
+50 564 Td
+(--- PROJECTS ---) Tj
+ET
+BT
+/F2 10 Tf
+0 0 0 rg
+50 548 Td
+(1. AI Resume Analyzer (Completed)) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 534 Td
+(   - Full-stack AI application evaluating resumes vs job descriptions with NLP & ATS scoring.) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 521 Td
+(   - Tech: Python, Flask, spaCy, Scikit-Learn, HTML, CSS, JavaScript) Tj
+ET
+BT
+/F2 10 Tf
+0 0 0 rg
+50 502 Td
+(2. IPL Score Prediction (Completed)) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 488 Td
+(   - ML application forecasting IPL match innings scores and real-time win probability.) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 475 Td
+(   - Tech: Python, Flask, Pandas, Scikit-Learn, Chart.js) Tj
+ET
+BT
+/F2 10 Tf
+0 0 0 rg
+50 456 Td
+(3. Stock Market Prediction (Currently Building)) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 442 Td
+(   - AI-powered trend analysis & price forecasting on historical stock market data.) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 429 Td
+(   - Tech: Python, Machine Learning, Pandas, NumPy, Scikit-Learn, Flask) Tj
+ET
+BT
+/F2 10 Tf
+0 0 0 rg
+50 410 Td
+(4. LifeOS AI (Currently Building)) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 396 Td
+(   - Generative AI productivity copilot and personal knowledge assistant using LangChain & LLMs.) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 383 Td
+(   - Tech: Python, Flask, LangChain, Generative AI, LLMs) Tj
+ET
+BT
+/F2 12 Tf
+0.2 0.3 0.6 rg
+50 364 Td
+(--- CERTIFICATIONS ---) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 348 Td
+(- Python Essentials - Cisco Networking Academy) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 335 Td
+(- LangChain Certification \(2026\) - LangChain Academy) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 322 Td
+(- Generative AI \(2026\) - Google Cloud) Tj
+ET
+BT
+/F2 12 Tf
+0.2 0.3 0.6 rg
+50 303 Td
+(--- ACHIEVEMENTS ---) Tj
+ET
+BT
+/F1 9.5 Tf
+0.15 0.15 0.2 rg
+55 287 Td
+(- 1st Prize in Debugging Competition \(Identifying and fixing complex logical & runtime errors\)) Tj
+ET
+
+endstream
+endobj
+xref
+0 5
+0000000000 65535 f 
+0000000010 00000 n 
+0000000060 00000 n 
+0000000117 00000 n 
+0000000330 00000 n 
+trailer
+<<
+  /Size 5
+  /Root 1 0 R
+>>
+startxref
+3517
+%%EOF

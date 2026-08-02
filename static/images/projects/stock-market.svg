@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0B1120"/>
+
+  <!-- Grid lines -->
+  <g stroke="#1E293B" stroke-width="0.75" opacity="0.6">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Software Dashboard Window -->
+  <rect x="40" y="30" width="720" height="390" rx="10" fill="#111827" stroke="#1F2937" stroke-width="1.5"/>
+  <rect x="40" y="30" width="720" height="40" rx="10" fill="#162032"/>
+  <circle cx="65" cy="50" r="4.5" fill="#EF4444"/>
+  <circle cx="82" cy="50" r="4.5" fill="#F59E0B"/>
+  <circle cx="99" cy="50" r="4.5" fill="#10B981"/>
+  <text x="400" y="55" fill="#9CA3AF" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Stock Market Prediction — LSTM Deep Learning Forecaster</text>
+
+  <!-- Left: Realtime Tickers & Model Performance -->
+  <rect x="65" y="90" width="250" height="305" rx="8" fill="#0B1120" stroke="#1F2937" stroke-width="1"/>
+  <text x="85" y="120" fill="#F9FAFB" font-family="'Poppins', sans-serif" font-size="14" font-weight="700">Market Feed</text>
+  
+  <rect x="85" y="135" width="210" height="60" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="100" y="157" fill="#9CA3AF" font-family="'Inter', sans-serif" font-size="11">AAPL (Apple Inc.)</text>
+  <text x="100" y="181" fill="#10B981" font-family="'Inter', sans-serif" font-size="15" font-weight="800">$189.45 <tspan font-size="11" font-weight="600">+2.34%</tspan></text>
+
+  <rect x="85" y="205" width="210" height="60" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="100" y="227" fill="#9CA3AF" font-family="'Inter', sans-serif" font-size="11">NVDA (NVIDIA)</text>
+  <text x="100" y="251" fill="#3B82F6" font-family="'Inter', sans-serif" font-size="15" font-weight="800">$128.80 <tspan font-size="11" font-weight="600">+4.12%</tspan></text>
+
+  <rect x="85" y="275" width="210" height="100" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="100" y="297" fill="#F9FAFB" font-family="'Inter', sans-serif" font-size="11" font-weight="700">LSTM Model State:</text>
+  <text x="100" y="317" fill="#9CA3AF" font-family="'Inter', sans-serif" font-size="11">Loss (MSE): 0.0014</text>
+  <text x="100" y="337" fill="#9CA3AF" font-family="'Inter', sans-serif" font-size="11">Lookback Window: 60 Days</text>
+  <text x="100" y="357" fill="#F59E0B" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Status: Training &amp; Optimizing</text>
+
+  <!-- Right: Candlestick / Forecast Line Graph -->
+  <rect x="330" y="90" width="405" height="305" rx="8" fill="#0B1120" stroke="#1F2937" stroke-width="1"/>
+  <text x="355" y="120" fill="#F9FAFB" font-family="'Poppins', sans-serif" font-size="14" font-weight="700">Historical Trend &amp; 30-Day LSTM Forecast</text>
+
+  <line x1="365" y1="340" x2="705" y2="340" stroke="#334155" stroke-width="1"/>
+  <line x1="365" y1="150" x2="365" y2="340" stroke="#334155" stroke-width="1"/>
+
+  <!-- Historical Line (Solid Blue) -->
+  <path d="M375 285 L415 295 L455 265 L495 275 L535 235 L575 215 L615 225" fill="none" stroke="#3B82F6" stroke-width="3"/>
+
+  <!-- Projected Forecast Line (Dashed Cyan) -->
+  <path d="M615 225 L645 200 L675 175 L700 160" fill="none" stroke="#60A5FA" stroke-width="3" stroke-dasharray="6,4"/>
+  <circle cx="700" cy="160" r="5" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Gradient fill area underneath -->
+  <path d="M375 285 L415 295 L455 265 L495 275 L535 235 L575 215 L615 225 L645 200 L675 175 L700 160 L700 340 L375 340 Z" fill="#3B82F6" opacity="0.08"/>
+
+  <!-- Forecast Target Marker -->
+  <rect x="585" y="130" width="120" height="26" rx="4" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
+  <text x="645" y="147" fill="#F9FAFB" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Projected: $198.50</text>
+</svg>

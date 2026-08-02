@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Subtle Gradient for circular background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Portrait Clip Path -->
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="190"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background Layer -->
+  <g clip-path="url(#circleClip)">
+    <rect width="400" height="400" fill="url(#bgGrad)"/>
+    
+    <!-- Simple Geometric Background Shapes -->
+    <circle cx="200" cy="200" r="150" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.4"/>
+    <circle cx="200" cy="200" r="100" fill="none" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.2"/>
+    <line x1="200" y1="20" x2="200" y2="380" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3"/>
+    <line x1="20" y1="200" x2="380" y2="200" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3"/>
+
+    <!-- Professional Software Engineer Portrait Silhouette -->
+    <!-- Shoulders & Coat -->
+    <path d="M70 410 C 90 320, 140 280, 200 280 C 260 280, 310 320, 330 410 Z" fill="#1E293B"/>
+    <path d="M120 410 C 135 340, 160 305, 200 305 C 240 305, 265 340, 280 410 Z" fill="#293548"/>
+
+    <!-- Shirt / Collar / Tie -->
+    <polygon points="175,305 225,305 200,355" fill="#F8FAFC"/>
+    <polygon points="194,315 206,315 204,395 196,395" fill="#3B82F6"/>
+
+    <!-- Neck -->
+    <path d="M180 230 L 220 230 L 220 295 L 180 295 Z" fill="#E2E8F0"/>
+    <path d="M180 230 L 220 230 L 220 250 L 180 250 Z" fill="#CBD5E1"/>
+
+    <!-- Head & Face Structure -->
+    <ellipse cx="200" cy="190" rx="60" ry="72" fill="#E2E8F0"/>
+
+    <!-- Professional Modern Hair Style -->
+    <path d="M136 175 C 135 120, 165 95, 200 95 C 240 95, 265 118, 265 170 C 255 140, 235 125, 200 125 C 165 125, 148 145, 136 175 Z" fill="#0F172A"/>
+
+    <!-- Minimalist Professional Glasses -->
+    <rect x="156" y="172" width="36" height="24" rx="4" fill="none" stroke="#0F172A" stroke-width="3"/>
+    <rect x="208" y="172" width="36" height="24" rx="4" fill="none" stroke="#0F172A" stroke-width="3"/>
+    <line x1="192" y1="182" x2="208" y2="182" stroke="#0F172A" stroke-width="3"/>
+
+    <!-- Subtle Facial Features -->
+    <!-- Eyes -->
+    <circle cx="174" cy="184" r="3.5" fill="#0F172A"/>
+    <circle cx="226" cy="184" r="3.5" fill="#0F172A"/>
+    <!-- Eyebrows -->
+    <path d="M160 168 Q 174 163 188 168" fill="none" stroke="#0F172A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M212 168 Q 226 163 240 168" fill="none" stroke="#0F172A" stroke-width="3" stroke-linecap="round"/>
+    <!-- Nose -->
+    <path d="M200 185 L 197 205 L 204 205" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Friendly Professional Smile -->
+    <path d="M185 224 Q 200 234 215 224" fill="none" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Outer Ring with Subtle Blue Glow -->
+  <circle cx="200" cy="200" r="192" fill="none" stroke="#3B82F6" stroke-width="3"/>
+</svg>
