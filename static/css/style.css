@@ -1551,9 +1551,10 @@ img, svg {
   align-items: start;
 }
 
-/* Reduce bottom padding for contact section so page ends cleanly */
-#contact {
-  padding-bottom: 40px;
+@media (max-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact-details-wrapper {
@@ -2276,6 +2277,97 @@ img, svg {
   .page-subtitle {
     font-size: 14px;
     line-height: 1.75;
+  }
+
+  .cert-grid-page {
+    padding: 0 16px;
+    gap: 22px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .cert-page-card,
+  .achievement-primary-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 18px;
+  }
+
+  .cert-card-header,
+  .achievement-header-row {
+    gap: 14px;
+  }
+
+  .cert-heading,
+  .achievement-main-title {
+    font-size: 22px;
+    line-height: 1.25;
+    word-break: break-word;
+  }
+
+  .cert-description-text,
+  .achievement-detail-text {
+    font-size: 0.98rem;
+    word-break: break-word;
+  }
+
+  .cert-skills-list,
+  .achievement-skill-badges {
+    gap: 8px;
+  }
+
+  .cert-skill-pill,
+  .achievement-skill-badges .skill-pill {
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .achievement-merged-block {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .achievement-primary-card {
+    gap: 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .contact-details-wrapper {
+    padding: 24px;
+  }
+
+  .contact-method-card {
+    width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .method-info {
+    min-width: 0;
+  }
+
+  .method-val {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .btn-resume {
+    white-space: nowrap;
   }
 }
 
