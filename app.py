@@ -52,14 +52,6 @@ def legacy_contact():
 # RESUME & API ROUTES
 # ------------------------------------------------------------------------------
 
-@app.route('/resume')
-def view_resume():
-    """Serves the verified PDF resume directly in the browser for viewing."""
-    return send_from_directory(
-        'static/resume',
-        'Maneesh_Resume.pdf'
-    )
-
 @app.route('/api/contact', methods=['POST'])
 def api_contact():
     """Processes AJAX contact form submissions with input validation."""

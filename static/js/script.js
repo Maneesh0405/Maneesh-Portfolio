@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle.classList.remove('active');
         navToggle.setAttribute('aria-expanded', 'false');
       }
+      document.body.classList.remove('nav-open');
     }
   }
 
@@ -80,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = navMenu.classList.toggle('open');
       navToggle.classList.toggle('active', isOpen);
       navToggle.setAttribute('aria-expanded', isOpen);
+      document.body.classList.toggle('nav-open', isOpen);
     });
 
     // Close mobile menu when clicking outside
@@ -88,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.remove('open');
         navToggle.classList.remove('active');
         navToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
       }
     });
   }
