@@ -189,12 +189,6 @@ img, svg {
   margin: 0;
 }
 
-/* Active tab section: display block with 200ms fade transition */
-.tab-section.active-tab {
-  display: block;
-  animation: tabFadeIn 200ms ease forwards;
-}
-
 /* Fade-in helper used when showing sections via JS */
 .fade-in {
   animation: tabFadeIn 200ms ease forwards;
@@ -433,19 +427,7 @@ img, svg {
 }
 
 .btn-secondary {
-  background-color: #0F172A;
-  color: var(--text-white);
-  border-color: var(--border-card);
-}
 
-.btn-secondary:hover {
-  background-color: #1E293B;
-  border-color: #475569;
-  transform: translateY(-2px);
-}
-
-.btn-secondary {
-  background-color: #1F2937;
   color: var(--text-primary);
   border-color: #374151;
 }
@@ -1623,6 +1605,11 @@ img, svg {
   }
 }
 
+.contact-info-col {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
 .contact-details-wrapper {
   padding: 36px;
   height: auto;
@@ -1697,192 +1684,6 @@ img, svg {
   font-weight: 600;
   color: var(--text-white);
 }
-
-/* View Resume Section on Contact Page */
-.resume-section-wrapper {
-  margin-top: 32px;
-  padding-top: 28px;
-  border-top: 1px solid var(--border-subtle);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.resume-section-title {
-  font-family: var(--font-heading);
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--text-white);
-}
-
-.resume-preview-card {
-  padding: 20px 24px;
-  background-color: #162032;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.resume-preview-left {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.resume-file-icon-box {
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
-  border-radius: var(--radius-sm);
-  background-color: var(--clr-accent-subtle);
-  border: 1px solid var(--clr-accent-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--clr-accent);
-}
-
-.resume-file-svg {
-  width: 24px;
-  height: 24px;
-}
-
-.resume-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.resume-filename {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text-white);
-}
-
-.resume-role {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-}
-
-.resume-updated {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.resume-badge-pdf {
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 4px 12px;
-  background-color: rgba(239, 68, 68, 0.12);
-  color: #EF4444;
-  border: 1px solid rgba(239, 68, 68, 0.35);
-  border-radius: var(--radius-full);
-}
-
-.btn-view-resume {
-  width: 100%;
-  padding: 16px 28px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: var(--radius-md);
-}
-
-/* Contact Form Card */
-.form-card {
-  padding: 36px;
-  height: auto;
-  min-height: auto;
-}
-
-.form-card-title {
-  font-family: var(--font-heading);
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--text-white);
-  margin-bottom: 24px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.form-label {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-}
-
-.req {
-  color: #EF4444;
-}
-
-.form-input, .form-textarea {
-  width: 100%;
-  padding: 16px 20px;
-  background-color: var(--bg-input);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  color: var(--text-white);
-  font-size: 1.05rem;
-  transition: border-color var(--transition-fast), background-color var(--transition-fast);
-  outline: none;
-}
-
-.form-textarea {
-  resize: vertical;
-}
-
-.form-input:focus, .form-textarea:focus {
-  border-color: var(--clr-accent);
-  background-color: #0E1424;
-}
-
-.form-input.is-invalid, .form-textarea.is-invalid {
-  border-color: #EF4444;
-}
-
-.form-error {
-  font-size: 0.9rem;
-  color: #EF4444;
-  min-height: 20px;
-}
-
-.btn-submit {
-  width: 100%;
-  padding: 18px;
-  font-size: 18px;
-}
-
-.spinner {
-  display: none;
-  width: 22px;
-  height: 22px;
-  border: 2.5px solid rgba(255, 255, 255, 0.3);
-  border-top-color: #FFFFFF;
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-}
-
-@keyframes spin {
-  100% { transform: rotate(360deg); }
-}
-
-/* -----------------------------------------------------------------------------
-   15. FOOTER & TOAST
-   ----------------------------------------------------------------------------- */
-/* Footer and site-end controls removed per design request */
 
 /* -----------------------------------------------------------------------------
    16. DESKTOP & ULTRAWIDE OPTIMIZATION & RESPONSIVENESS
@@ -1995,7 +1796,7 @@ img, svg {
     margin-top: 26px;
   }
   .skills-grid, .skills-grid-3,
-  .about-page-grid, .contact-grid,
+  .contact-grid,
   .projects-grid,
   .edu-metrics-row,
   .curriculum-grid {
@@ -2301,21 +2102,6 @@ img, svg {
     min-width: 140px;
   }
 
-  .contact-form {
-    padding: 18px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    min-height: 44px;
-    font-size: 15px;
-  }
-
-  .contact-form textarea {
-    min-height: 100px;
-  }
-
-  .contact-form-col,
   .contact-info-col {
     width: 100%;
     margin-bottom: 16px;

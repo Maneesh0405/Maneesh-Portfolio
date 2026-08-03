@@ -3,9 +3,7 @@ Velicheti Maneesh Chowdari - Portfolio (Single-Page Application)
 """
 
 import os
-import re
-import datetime
-from flask import Flask, render_template, request, jsonify, send_from_directory, redirect, url_for
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'maneesh-portfolio-secret-key-2026')
@@ -49,54 +47,8 @@ def legacy_contact():
     return redirect('/#contact')
 
 # ------------------------------------------------------------------------------
-# RESUME & API ROUTES
+# NOTE: The site now uses static contact details only.
 # ------------------------------------------------------------------------------
-
-@app.route('/api/contact', methods=['POST'])
-def api_contact():
-    """Processes AJAX contact form submissions with input validation."""
-    data = request.get_json(silent=True)
-    if not data:
-        return jsonify({'success': False, 'message': 'Invalid JSON request payload.'}), 400
-
-    name = data.get('name', '').strip()
-    email = data.get('email', '').strip()
-    subject = data.get('subject', '').strip()
-    message = data.get('message', '').strip()
-
-    errors = {}
-    if not name or len(name) < 2:
-        errors['name'] = 'Name must be at least 2 characters long.'
-    
-    email_pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
-    if not email or not re.match(email_pattern, email):
-        errors['email'] = 'A valid email address is required.'
-
-    if not subject or len(subject) < 3:
-        errors['subject'] = 'Subject must be at least 3 characters long.'
-
-    if not message or len(message) < 10:
-        errors['message'] = 'Message must be at least 10 characters long.'
-
-    if errors:
-        return jsonify({
-            'success': False,
-            'message': 'Validation failed. Please correct the highlighted errors.',
-            'errors': errors
-        }), 400
-
-    # Log contact submission
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"\n[CONTACT SUBMISSION - {timestamp}]")
-    print(f"From: {name} <{email}>")
-    print(f"Subject: {subject}")
-    print(f"Message:\n{message}")
-    print("-" * 50)
-
-    return jsonify({
-        'success': True,
-        'message': f"Thank you, {name}! Your message has been sent successfully. I will get back to you shortly."
-    }), 200
 
 # ------------------------------------------------------------------------------
 # ERROR HANDLERS
