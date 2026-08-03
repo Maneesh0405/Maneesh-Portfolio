@@ -1371,52 +1371,118 @@ img, svg {
 }
 
 .achievement-primary-card {
-  padding: 40px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 18px;
   height: auto;
   min-height: auto;
   display: flex;
-  gap: 36px;
   align-items: flex-start;
+  gap: 24px;
+  box-sizing: border-box;
 }
 
 /* Gold-accent achievement styling */
 .achievement-primary-card.gold-accent {
   background-color: #0A0F19;
   border: 1px solid var(--clr-gold-border);
-  box-shadow: 0 12px 36px rgba(0,0,0,0.6);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55);
+}
+
+.achievement-icon-trophy-large {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  border-radius: var(--radius-lg);
+  background-color: #1F2937;
+  border: 1px solid #374151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .achievement-icon-trophy-large.gold {
-  background: linear-gradient(180deg, rgba(251,191,36,0.08), rgba(251,191,36,0.03));
+  background: linear-gradient(180deg, rgba(251, 191, 36, 0.12), rgba(251, 191, 36, 0.04));
   border: 1px solid var(--clr-gold-border);
 }
 
-.achievement-host-title {
-  font-size: 1.15rem;
+.achievement-content-full {
+  flex: 1;
+  min-width: 0;
+}
+
+.achievement-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.achievement-main-title {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-white);
+  line-height: 1.1;
+  margin: 0;
+  max-width: calc(100% - 180px);
+}
+
+.achievement-winner-pill {
+  font-size: 0.95rem;
   font-weight: 600;
+  padding: 8px 18px;
+  background-color: rgba(245, 158, 11, 0.16);
+  color: #FBBF24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 999px;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.achievement-host-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--clr-accent);
+  margin-bottom: 16px;
+}
+
+.achievement-detail-text {
+  font-size: 1rem;
   color: var(--text-secondary);
-  margin-bottom: 12px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 .achievement-skill-badges {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 18px;
+  justify-content: flex-start;
 }
 
 .achievement-skill-badges .skill-pill {
-  font-size: 0.95rem;
-  padding: 8px 12px;
-  background-color: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.04);
+  font-size: 13px;
+  padding: 8px 14px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: var(--text-secondary);
-  border-radius: var(--radius-full);
+  border-radius: 20px;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .achievement-skill-badges .skill-pill.gold {
   color: var(--clr-gold);
   border-color: var(--clr-gold-border);
-  background-color: var(--clr-gold-bg);
+  background-color: rgba(251, 191, 36, 0.08);
 }
 
 /* Separator & centered subsection heading between certificates and achievement */
@@ -2427,6 +2493,57 @@ img, svg {
   .btn-card {
     width: 100%;
     max-width: 220px;
+  }
+
+  .achievement-primary-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .achievement-icon-trophy-large {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .achievement-header-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .achievement-main-title {
+    font-size: 24px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .achievement-host-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .achievement-winner-pill {
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .achievement-detail-text {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto 16px;
+  }
+
+  .achievement-skill-badges {
+    justify-content: center;
+  }
+
+  .achievement-primary-card {
+    padding: 24px;
+    max-width: 100%;
   }
 }
 
